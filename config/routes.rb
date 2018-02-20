@@ -10,6 +10,9 @@ get 'my_portfolio', to: 'users#my_portfolio'
 get 'about', to: 'welcome#about'
 
 get 'search_stocks', to: 'stocks#search'
+
+resources :user_stocks, only: [:create, :destroy]
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
